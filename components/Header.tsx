@@ -5,7 +5,8 @@ import { Button } from './ui/button'
 import { redirect } from 'next/navigation'
 
 const Header = () => {
-  async function search(formData ) {
+  //@ts-ignore
+  async function search(formData  ) {
     'use server'
     const q = formData.get("q");
     redirect(`/search?q=${q}`)
