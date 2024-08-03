@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -13,10 +14,13 @@ interface Props {
   movies: movie[];
 }
 export default function Movies({ movies }: Props) {
+   
+
   const poster = "http://image.tmdb.org/t/p/w342";
   return (
     <>
       <div className="flex flex-row gap-10 justify-center flex-wrap">
+        
         {movies.map((movie) => {
           return (
             <div

@@ -14,8 +14,8 @@ export default async function page({searchParams}: {searchParams : {q : string}}
   const search = await fetchSearch(searchParams.q)
 
   return (
-    <div>
-      <h3 className="">
+    <div className=''>
+      <h3 className="font-bold border-b mb-4 pb-2">
        Search :  {searchParams.q}
       </h3>
       <Movies movies={search.results}/>
